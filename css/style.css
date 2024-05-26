@@ -288,8 +288,9 @@ section {
 
 .social-icons {
     display: flex;
-    justify-content: center;
+    align-items: center; /* Pusatkan ikon secara vertikal */
 }
+
 
 .social-icon {
     font-size: 24px;
