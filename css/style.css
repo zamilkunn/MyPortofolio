@@ -227,7 +227,7 @@ section {
 
 .more-details {
     text-decoration: none;
-    color: #000000;
+    color: #3498db;
 }
 
 .more-details:hover {
@@ -264,23 +264,44 @@ section {
     justify-content: space-between;
 }
 
+.footer {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .footer-title {
-    font-size: 1.3em;
-    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.footer-title span {
-    color: #faf9f9 ;
+.footer-contact {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #3498db
 }
 
-.footer-title span:hover {
-    color: #000000;
+.social-icons {
+    display: flex;
+    justify-content: center;
 }
 
-.footer .social-icons a {
-    font-size: 1.3em;
-    padding: 0 12px 0 0;
+.social-icon {
+    font-size: 24px;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s ease;
 }
+
+.social-icon:hover {
+    color: #007bff;
+}
+
 
 @media(max-width:1023px) {
     header {
