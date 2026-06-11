@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamil | Frontend Developer Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Muhamad Cep Zamil, a passionate Frontend Web Developer specializing in building clean, modern, responsive, and interactive websites.">
+    <meta name="author" content="Muhamad Cep Zamil">
+    
+    <!-- CSS & Fonts -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/Profile.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/Profile.png">
+    <link rel="manifest" href="ico/site.webmanifest">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <a class="logo" href="#home">zamil</a>
+        
+        <div class="nav-container" id="nav-container">
+            <nav class="navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#aboutme" class="nav-link">About Me</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+        
+        <!-- Theme Switcher & Hamburger -->
+        <div style="display: flex; align-items: center; gap: 15px; z-index: 1001;">
+            <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <i class="fas fa-bars mobile-toggle" id="mobile-menu-btn" aria-label="Open Mobile Menu"></i>
+        </div>
+    </header>
+
+    <!-- Animated Glow Backgrounds -->
+    <div class="glow-container">
+        <div class="glow-orb glow-orb-1"></div>
+        <div class="glow-orb glow-orb-2"></div>
+    </div>
+
+    <!-- Hero / Home Section -->
+    <section class="main" id="home">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <span class="hero-tag">Welcome to my corner</span>
+                <h2>Hello, I'm <span>Zamil</span><br>A Front-End Web Developer</h2>
+                <p class="hero-desc">I specialize in designing and building modern, responsive, and performance-driven web interfaces. Let's create something extraordinary together.</p>
+                
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="https://facebook.com/zamilkunn" class="social-icon-btn fb" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/zamil4you" class="social-icon-btn tw" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/zamildust" class="social-icon-btn ig" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/zamilkunn" class="social-icon-btn gh" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/zamilmuhamad/" class="social-icon-btn ln" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-image-container">
+                <div class="hero-glow-circle"></div>
+                <div class="hero-card">
+                    <div class="hero-card-header">
+                        <img src="ico/Profile.png" alt="Zamil Profile" class="hero-card-img">
+                        <div class="hero-card-title">
+                            <h4>Muhamad Cep Zamil</h4>
+                            <p>Frontend Developer</p>
+                        </div>
+                    </div>
+                    <div class="code-window">
+                        <div class="code-dots">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                        </div>
+                        <div class="code-line">const <span>dev</span> = {</div>
+                        <div class="code-line">&nbsp;&nbsp;name: <span class="string">'Zamil'</span>,</div>
+                        <div class="code-line">&nbsp;&nbsp;role: <span class="string">'Frontend'</span>,</div>
+                        <div class="code-line">&nbsp;&nbsp;skills: [</div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'HTML'</span>, <span class="string">'CSS'</span>, <span class="string">'JS'</span>,</div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'Flutter'</span>, <span class="string">'Kotlin'</span></div>
+                        <div class="code-line">&nbsp;&nbsp;]</div>
+                        <div class="code-line">};</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section-padding" id="aboutme">
+        <div class="section-header">
+            <span class="section-tag">About Me</span>
+            <h2 class="section-title">Who is Zamil?</h2>
+        </div>
+        
+        <div class="aboutme-container">
+            <div class="profile-card-wrapper">
+                <div class="profile-border-glow"></div>
+                <div class="profile-card">
+                    <div class="profile-img-frame">
+                        <img src="ico/Profile.png" alt="Muhamad Cep Zamil Profile" class="avatar">
+                    </div>
+                    <h3>Muhamad Cep Zamil</h3>
+                    <p>Web Developer & Designer</p>
+                    <img src="images/Barcode.png" alt="Profile Barcode" class="profile-barcode">
+                </div>
+            </div>
+            
+            <div class="about-details">
+                <p class="about-bio">Highly enthusiastic about developing my skills in all areas related to my field of study. I focus on creating responsive, efficient, and visual-first websites with clean layouts and robust logic. I enjoy solving front-end challenges and turning design mockups into living websites.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-num">05+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">02+</div>
+                        <div class="stat-label">Years of Development</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">05+</div>
+                        <div class="stat-label">Technologies Mastered</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">100%</div>
+                        <div class="stat-label">Enthusiasm & Dedication</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section-padding projects" id="projects">
+        <div class="section-header">
+            <span class="section-tag">Portfolio</span>
+            <h2 class="section-title">My Projects</h2>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image-box">
+                    <img src="images/p1.jpg" alt="Pergerakan Mahasiswa Islam Indonesia Website Screenshot">
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Organization & Community</span>
+                    <h3 class="project-title">PMII Platform</h3>
+                    <p class="project-description">A professional platform reflecting social awareness, organizational activity, mobilization, and policymaker engagement built for Pergerakan Mahasiswa Islam Indonesia.</p>
+                    <div class="project-footer">
+                        <a href="https://pmii-lorem-ipsum.vercel.app/" class="project-link" target="_blank">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image-box">
+                    <img src="images/p2.jpg" alt="BLKN Community Website Screenshot">
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Grassroots Digital Hub</span>
+                    <h3 class="project-title">BLKN Community</h3>
+                    <p class="project-description">A grassroots web platform serving as an information hub, social connector, and collaboration space to support local community programs and sustainable development.</p>
+                    <div class="project-footer">
+                        <a href="https://www.wargiblkn.my.id/" class="project-link" target="_blank">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image-box">
+                    <img src="images/p3.jpg" alt="To-Do List Web App Screenshot">
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Productivity Tool</span>
+                    <h3 class="project-title">Interactive To-Do List</h3>
+                    <p class="project-description">A personal initiative to build a lightweight, intuitive productivity app for managing daily tasks, goals, and agendas, promoting self-discipline and time management.</p>
+                    <div class="project-footer">
+                        <a href="https://todolisttehpocimilo.vercel.app/" class="project-link" target="_blank">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-image-box">
+                    <img src="images/p4.jpg" alt="Shafana Travel Website Screenshot">
+                </div>
+                <div class="project-content">
+                    <span class="project-category">E-Commerce & Travel</span>
+                    <h3 class="project-title">Shafana Travel Agency</h3>
+                    <p class="project-description">A clean travel agency landing page helping customers book, coordinate, and browse global holiday packages and itineraries easily.</p>
+                    <div class="project-footer">
+                        <a href="https://www.shafanatravel.com/" class="project-link" target="_blank">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-image-box">
+                    <img src="images/p5.jpg" alt="UNSIKA Faculty of Law Room Booking Web Screenshot">
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Web System & Management</span>
+                    <h3 class="project-title">UNSIKA Booking System</h3>
+                    <p class="project-description">A fully functional Room Booking Information System custom-designed for the Faculty of Law at UNSIKA to optimize classroom reservations.</p>
+                    <div class="project-footer">
+                        <a href="https://ipufh.vercel.app/index.html" class="project-link" target="_blank">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-padding" id="skills">
+        <div class="section-header">
+            <span class="section-tag">Competencies</span>
+            <h2 class="section-title">My Skills</h2>
+        </div>
+        
+        <div class="skills-container">
+            <div class="skills-grid">
+                <!-- HTML -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <img src="images/html.png" alt="HTML Icon">
+                    </div>
+                    <h4>HTML</h4>
+                </div>
+                
+                <!-- CSS -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <img src="images/css.png" alt="CSS Icon">
+                    </div>
+                    <h4>CSS</h4>
+                </div>
+                
+                <!-- JavaScript -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <img src="images/js.png" alt="JavaScript Icon">
+                    </div>
+                    <h4>JavaScript</h4>
+                </div>
+                
+                <!-- Flutter -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <img src="images/Flutter.png" alt="Flutter Icon">
+                    </div>
+                    <h4>Flutter</h4>
+                </div>
+                
+                <!-- Kotlin -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <img src="images/kotlin.png" alt="Kotlin Icon">
+                    </div>
+                    <h4>Kotlin</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding contact" id="contact">
+        <div class="section-header">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Contact Me</h2>
+        </div>
+        
+        <div class="contact-wrapper">
+            <div class="contact-info-column">
+                <div class="contact-intro">
+                    <h3>Let's talk about your project!</h3>
+                    <p>Have an idea or need a dedicated frontend developer? Drop me a line or send an email directly. I'll get back to you as soon as possible.</p>
+                </div>
+                
+                <div class="contact-details-list">
+                    <div class="contact-detail-card">
+                        <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-detail-text">
+                            <h5>Email Address</h5>
+                            <p><a href="mailto:zamilkun@gmail.com">zamilkun@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail-card">
+                        <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-detail-text">
+                            <h5>Based In</h5>
+                            <p>Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-card">
+                <form id="contact-form" action="mailto:zamilkun@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input" placeholder="Your Message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">zamil</div>
+        <div class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+            <a href="https://facebook.com/zamilkunn" class="social-icon-btn fb" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/zamil4you" class="social-icon-btn tw" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/zamieelmuh" class="social-icon-btn ig" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/zamilkunn" class="social-icon-btn gh" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/zamilmuhamad/" class="social-icon-btn ln" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer-copyright">&copy; 2026 Muhamad Cep Zamil. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" title="Go to top" aria-label="Scroll back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Interactive Logic -->
+    <script>
+        // --- MOBILE NAV TOGGLE ---
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navContainer = document.getElementById('nav-container');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navContainer.classList.toggle('open');
+            mobileMenuBtn.classList.toggle('fa-bars');
+            mobileMenuBtn.classList.toggle('fa-times');
+        });
+
+        // Close menu when clicking link
+        document.querySelectorAll('.navigation a').forEach(link => {
+            link.addEventListener('click', () => {
+                navContainer.classList.remove('open');
+                mobileMenuBtn.classList.add('fa-bars');
+                mobileMenuBtn.classList.remove('fa-times');
+            });
+        });
+
+        // --- DARK / LIGHT MODE ---
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        
+        // Check local storage preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-theme');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+            const isLight = document.body.classList.contains('light-theme');
+            
+            if (isLight) {
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'light');
+            } else {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // --- HEADER SHRINK & BACK TO TOP SHOW ---
+        const header = document.getElementById('header');
+        const backToTop = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('shrink');
+            } else {
+                header.classList.remove('shrink');
+            }
+
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // --- ACTIVE NAV LINK ON SCROLL ---
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.navigation a');
+
+        window.addEventListener('scroll', () => {
+            let currentSectionId = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSectionId}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // --- SCROLL ANIMATION OBSERVER ---
+        const observeElements = document.querySelectorAll('.project-card, .skill-card, .stat-item, .contact-detail-card, .hero-content, .hero-image-container, .profile-card, .about-details');
+        
+        // Add default fade style dynamically
+        const styleSheet = document.createElement("style");
+        styleSheet.innerText = `
+            .scroll-reveal {
+                opacity: 0;
+                transform: translateY(25px);
+                transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .scroll-reveal-visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        `;
+        document.head.appendChild(styleSheet);
+
+        observeElements.forEach(el => el.classList.add('scroll-reveal'));
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('scroll-reveal-visible');
+                    observer.unobserve(entry.target); // Trigger once
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        observeElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
